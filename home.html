@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Grow Up</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-web.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo-web.png" alt="">
+        <h1 class="sitename">Grow Up</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <i class="mobile-nav-toggle bi bi-list" onclick="toggleMobileMenu()"></i>
+        <ul id="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Pemantauan</a></li>
+          <li><a href="#">Jadwal</a></li>
+          <li><a href="#">Edukasi</a></li>
+          <li><a href="#">Konsultasi</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      
+      <div class="auth-buttons">
+        <a class="cta-btn login-btn" href="index.html#about">Login</a>
+        <a class="cta-btn signup-btn" href="index.html#about">Sign Up</a>
+      </div>
+      
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container d-flex flex-column align-items-center text-center">
+        <h2>Bersama Lawan Stunting untuk</h2>
+        <h2>Masa Depan Anak yang lebih baik</h2>
+        <img src="assets/img/profile-web.png" class="hero-img" alt="Ilustrasi anak sehat">
+      </div>
+    </section>
+    
+
+    <div class="status">
+      <section id="stats" class="stats section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4 justify-content-center">
+          
+                <!-- Stat 1 -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="stats-item d-flex align-items-start p-4 h-100">
+                    <img src="assets/img/people-1.png" alt="" class="stats-icon me-3">
+                    <div>
+                      <h5>Jumlah Anak di Dunia</h5>
+                      <h4>>2.3M</h4>
+                      <p>Diperkirakan ada lebih dari dua miliar anak yang hidup di dunia saat ini.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Stat 2 -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="stats-item d-flex align-items-start p-4 h-150 w-400">
+                    <img src="assets/img/people-2.png" alt="" class="stats-icon me-3">
+                    <div>
+                      <h5>Anak yang Mengalami Stunting</h5>
+                      <h4>148.100.000</h4>
+                      <p>Lebih dari 148 juta anak mengalami gangguan pertumbuhan akibat kekurangan gizi.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Stat 3 -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="stats-item d-flex align-items-start p-4 h-100">
+                    <img src="assets/img/percent.png" alt="" class="stats-icon me-3">
+                    <div>
+                      <h5>Persentase Global</h5>
+                      <h4>22.3%</h4>
+                      <p>Sekitar 1 dari 5 anak di dunia mengalami stunting.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <hr>
+      </section>
+      
+      <section class="fitur-slider py-2">
+        <div class="container">
+          <div id="fiturCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+      
+              <!-- SLIDE 1 -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center gap-3">
+                  <div class="col-md-3 card-fitur">
+                    <div class="card text-center p-3">
+                      <img src="assets/img/slider-1.png" class="card-img-top rounded mx-auto" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Pemantauan Pertumbuhan Anak</h5>
+                        <p class="card-text">Fitur untuk Orang tua atur kadar penyambut data seperti tinggi badan, berat badan, dan umur.</p>
+                        <a href="#" class="btn btn-success">Lihat fitur ini</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3 card-fitur">
+                    <div class="card text-center p-3">
+                      <img src="assets/img/slider-2.png" class="card-img-top rounded mx-auto" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Jadwal Reminder 1000 Hari Pertama Kehidupan</h5>
+                        <p class="card-text">Fitur Reminder untuk Ibu Hamil & Menyusui, Imunisasi, Vitamin, Kontrol Kandungan.</p>
+                        <a href="#" class="btn btn-success">Lihat fitur ini</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3 card-fitur">
+                    <div class="card text-center p-3">
+                      <img src="assets/img/slider-3.png" class="card-img-top rounded mx-auto" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Edukasi Gizi & Pola Makan Sehat</h5>
+                        <p class="card-text">Tips Gizi Seimbang, Resep Makanan Bergizi, dan Video interaktif.</p>
+                        <a href="#" class="btn btn-success">Lihat fitur ini</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- SLIDE 2 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center gap-3">
+                  <div class="col-md-3 card-fitur">
+                    <div class="card text-center p-3">
+                      <img src="assets/img/konsultasi.png" class="card-img-top rounded mx-auto" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Konsultasi Online </h5>
+                        <p class="card-text">Tanya jawab seputar stunting dengan chatbot atau ahli gizi langsung.</p>
+                        <a href="#" class="btn btn-success">Lihat fitur ini</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3 card-fitur">
+                    <div class="card text-center p-3">
+                      <img src="assets/img/slider-1.png" class="card-img-top rounded mx-auto" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Monitoring Kesehatan Ibu</h5>
+                        <p class="card-text">Pantau kesehatan ibu hamil dan menyusui melalui catatan medis digital.</p>
+                        <a href="#" class="btn btn-success">Lihat fitur ini</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3 card-fitur">
+                    <div class="card text-center p-3">
+                      <img src="assets/img/slider-3.png" class="card-img-top rounded mx-auto" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Rencana Makanan Harian</h5>
+                        <p class="card-text">Rekomendasi menu harian bergizi untuk anak dan ibu menyusui.</p>
+                        <a href="#" class="btn btn-success">Lihat fitur ini</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!-- Kontrol Panah -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#fiturCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-success rounded-circle" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#fiturCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-success rounded-circle" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="d-flex justify-content-center">
+      <img src="assets/img/about-stunting.png" alt="">
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Edukasi tentang Stunting</h3>
+                <p class="caption">
+                  Saat ini, terdapat sekitar 2,2 miliar anak di seluruh dunia, yang mewakili sekitar 28% dari total populasi global. Namun, dari jumlah tersebut, sekitar 149 juta anak di bawah usia lima tahun mengalami stunting. Stunting adalah kondisi gagal tumbuh akibat kekurangan gizi kronis, terutama yang terjadi pada 1.000 hari pertama kehidupan anak. Wilayah yang paling banyak mengalami kasus stunting adalah Asia Selatan dan Sub-Sahara Afrika.
+                </p>
+                <p class="caption">
+                  Secara global, prevalensi stunting mencapai sekitar 22%, dengan beberapa negara bahkan mencatat angka lebih dari 35%. Masalah ini sangat serius karena dapat berdampak jangka panjang pada perkembangan kognitif, kesehatan, dan produktivitas anak di masa depan. Untuk mengatasi hal ini, dibutuhkan program intervensi gizi yang tepat, edukasi mengenai pola makan sehat, serta peningkatan akses terhadap layanan kesehatan. Video ini juga menekankan pentingnya kolaborasi antara pemerintah, organisasi internasional, dan masyarakat untuk menurunkan angka stunting dan memastikan anak-anak dapat tumbuh dan berkembang secara optimal.
+                </p>
+                <i>
+                  “Every child deserves to grow up healthy and strong. Let's prevent stunting from an early age.”
+                </i>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <iframe width="580" height="415" src="https://www.youtube.com/embed/zqpinGFvivg?si=KY0hqfoM6hTU7AKt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="embbed-youtube"></iframe>
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+        </div>
+      </div>
+
+    </section><!-- /Features Section -->
+    
+    <section class="news-slider py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Informasi Penting untuk Orang Tua Hebat</h2>
+        <p class="text-center">Yuk, bantu anak tumbuh sehat dan optimal dengan informasi yang mudah dipahami dan penuh manfaat.</p>
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+    
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar1.png" class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 1</h5>
+                      <p class="card-text text-muted">1 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar2.jpg" class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 2</h5>
+                      <p class="card-text text-muted">2 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar3.png" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 3</h5>
+                      <p class="card-text text-muted">3 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar4.jpeg" class="card-img-top" alt="News 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 4</h5>
+                      <p class="card-text text-muted">4 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar5.jpg" class="card-img-top" alt="News 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 5</h5>
+                      <p class="card-text text-muted">5 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar6.jpeg" class="card-img-top" alt="News 6">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 6</h5>
+                      <p class="card-text text-muted">6 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Tambahan Slide Lain Jika Perlu -->
+            <!-- ... -->
+            <div class="carousel-item active">
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar7.webp" class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 1</h5>
+                      <p class="card-text text-muted">1 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar8.jpg" class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 2</h5>
+                      <p class="card-text text-muted">2 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar9.webp" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 3</h5>
+                      <p class="card-text text-muted">3 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar10.jpg" class="card-img-top" alt="News 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 4</h5>
+                      <p class="card-text text-muted">4 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar11.png" class="card-img-top" alt="News 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 5</h5>
+                      <p class="card-text text-muted">5 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/img/gambar12.jpeg" class="card-img-top" alt="News 6">
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 6</h5>
+                      <p class="card-text text-muted">6 Mei 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Kontrol Carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="qna" class="qna-section">
+      <div class="qna-container">
+        <div class="qna-left">
+          <h1>Butuh Konsultasi?</h1>
+          <p>Silahkan kontak kami. Kami siap membantu!</p>
+          <h4>Kontak</h4>
+          <ul class="contact-info">
+            <li><span class="icon-square"></span> GrowUp@gmail.com</li>
+            <li><span class="icon-square"></span> +62-812-8513-5970</li>
+            <li><span class="icon-square"></span> Jl. Mutiara Gading City 23</li>
+          </ul>
+        </div>
+        <div class="qna-right">
+          <div class="qna-box">
+            <div class="qna-icon">?</div>
+            <h3 class="qna-title">Ada Pertanyaan?</h3>
+            <form>
+              <input type="text" placeholder="Nama Pengguna..." class="qna-input" required />
+              <textarea placeholder="Pesan yang ingin disampaikan..." class="qna-textarea" required></textarea>
+              <button type="submit" class="qna-button">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="consultation-section">
+      <div class="consultation-container">
+        <div class="consultation-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.790071786067!2d106.96979807453037!3d-6.1588642603623915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b4f86ba93ef%3A0xcf58e590de21713a!2sUniversitas%20Esa%20Unggul%20Kampus%20Bekasi!5e0!3m2!1sid!2sid!4v1746342567827!5m2!1sid!2sid"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="embbed-maps">
+          </iframe>
+        </div>
+    
+        <div class="consultation-form">
+          <h2>Jadwal dan Lokasi Tempat Konsultasi Gratis!</h2>
+          <p>“Every child deserves to grow up healthy and strong. Let's prevent stunting from an early age.”</p>
+    
+          <form>
+            <input type="text" placeholder="Nama Pengguna..." required />
+            <input type="text" placeholder="Alamat Rumah" required />
+            <textarea placeholder="Ingin konsultasi apa?" required></textarea>
+            <button type="submit" class="qna-button">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo-footer.png" alt="">
+            <span class="sitename">Grow Up</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Bekasi</p>
+            <p>Harapan Indah</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>08123439595</span></p>
+            <p><strong>Email:</strong> <span>growup@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-tiktok"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Pemantauan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Jadwal</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Edukasi</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Konsultasi</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Social Media</h4>
+          <ul>
+            <li class="d-flex gap-2 mb-2">
+              <img src="assets/img/ig.png" alt="Instagram" width="30" height="30">
+              <a href="#" class="text-white text-decoration-none link-opacity-75-hover">@growup</a>
+            </li>
+            <li class="d-fle gap-2 mb-2">
+              <img src="assets/img/tiktok.png" alt="TikTok" width="30" height="30">
+              <a href="#" class="text-white text-decoration-none link-opacity-75-hover">@growup</a>
+            </li>
+            <li class="d-flex gap-2">
+              <img src="assets/img/yt.png" alt="YouTube" width="30" height="30">
+              <a href="#" class="text-white text-decoration-none link-opacity-75-hover">@growup</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Tips Kesehatan Anak</h4>
+          <p>Dapatkan tips rutin seputar gizi, tumbuh kembang, dan pencegahan stunting untuk anak usia dini langsung ke email Anda!</p>
+          <button><a href="#">Langganan Tips</a></button>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+    <div class="container copyright text-center mt-1">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Grow Up</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
