@@ -1,0 +1,141 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Konsultasi Pertumbuhan Anak
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#2f3e1a] min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-[#e6e6cc] flex items-center justify-between px-4 sm:px-8 py-2 text-[10px] sm:text-xs text-[#2f3e1a] font-semibold">
+   <div class="flex items-center space-x-4">
+    <img alt="Logo placeholder, round greenish background with text Logo" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/6722a0aa-c8e5-43e3-dcdf-e1597b0a1234.jpg" width="24"/>
+    <a class="hover:underline" href="#">
+     Berita
+    </a>
+    <a class="hover:underline" href="#">
+     Pertumbuhan
+    </a>
+    <a class="hover:underline" href="#">
+     Jurnal
+    </a>
+    <a class="hover:underline" href="#">
+     Edukasi
+    </a>
+    <a class="bg-[#2f3e1a] text-[#c6d9a5] rounded-full px-3 py-1 hover:bg-[#3f4e2a] transition" href="#">
+     Konsultasi
+    </a>
+    <a class="hover:underline" href="#">
+     Tentang
+    </a>
+   </div>
+   <div class="flex items-center space-x-2">
+    <button class="border border-[#2f3e1a] rounded px-3 py-1 text-[#2f3e1a] hover:bg-[#d9d9b3] transition text-[10px] sm:text-xs">
+     Log In
+    </button>
+    <button class="bg-[#2f3e1a] text-[#c6d9a5] rounded px-3 py-1 text-[10px] sm:text-xs hover:bg-[#3f4e2a] transition">
+     Sign Up
+    </button>
+    <img alt="Indonesian flag placeholder, rectangle with red top half and white bottom half" class="w-5 h-3" height="14" src="https://storage.googleapis.com/a1aa/image/4789e039-3a77-451e-b8b0-1a6ed3fb4ec4.jpg" width="20"/>
+   </div>
+  </nav>
+  <!-- Main content -->
+  <main class="flex-grow flex flex-col items-center pt-8 px-4 sm:px-8">
+   <div class="max-w-4xl w-full">
+    <div class="flex items-center space-x-3 mb-2">
+     <div class="bg-[#2f3e1a] rounded-md p-3">
+      <img alt="Chatbot icon with three dots in a green rounded square" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/e62e327e-cf5a-4faf-60f6-712a8b24a7f4.jpg" width="32"/>
+     </div>
+     <h1 class="text-white text-xl sm:text-2xl font-semibold leading-tight">
+      Konsultasi
+      <br/>
+      Pertumbuhan Anak
+     </h1>
+    </div>
+    <p class="text-[#3ad94a] text-xs sm:text-sm mb-4">
+     Tanyakan seputar pertumbuhan Anak anda dengan Chatbot
+    </p>
+    <!-- Buttons -->
+    <div class="flex flex-wrap gap-3 mb-6">
+     <button class="bg-[#e6e6cc] text-[#2f3e1a] rounded-full px-4 py-1 text-xs sm:text-sm font-semibold whitespace-nowrap hover:bg-[#d9d9b3] transition">
+      Apa itu stunting?
+     </button>
+     <button class="bg-[#e6e6cc] text-[#2f3e1a] rounded-full px-4 py-1 text-xs sm:text-sm font-semibold whitespace-nowrap hover:bg-[#d9d9b3] transition">
+      Cara menambah berat badan
+     </button>
+     <button class="bg-[#e6e6cc] text-[#2f3e1a] rounded-full px-4 py-1 text-xs sm:text-sm font-semibold whitespace-nowrap hover:bg-[#d9d9b3] transition">
+      Makanan yang bergizi apa aja
+     </button>
+    </div>
+    <!-- Chat container -->
+    <section class="bg-[#e6e6cc] rounded-lg p-6 max-w-4xl w-full">
+     <!-- Chatbot message 1 -->
+     <div class="flex items-start space-x-3 mb-4 max-w-[70%]">
+      <div class="flex flex-col items-center text-[#a0a080] text-xs font-semibold w-12 shrink-0">
+       <div class="bg-[#a0a080] rounded-full w-10 h-10 mb-1">
+       </div>
+       Chatbot
+      </div>
+      <div class="bg-white border border-[#a0a080] rounded-lg p-3 text-xs leading-tight relative">
+       Halo! Saya Dr. Tumbuh, siap membantu anda memahami pertumbuhan si kecil.
+       <span class="text-[#a0a080] text-[8px] absolute bottom-1 right-2">
+        10:00
+       </span>
+      </div>
+     </div>
+     <!-- User message -->
+     <div class="flex items-start space-x-3 mb-4 max-w-[70%] ml-auto flex-row-reverse">
+      <div class="flex flex-col items-center text-[#a0a080] text-xs font-semibold w-12 shrink-0">
+       <div class="bg-[#a0a080] rounded-full w-10 h-10 mb-1">
+       </div>
+       Anda
+      </div>
+      <div class="bg-[#2f3e1a] text-[#c6d9a5] rounded-lg p-3 text-xs leading-tight relative max-w-[70%]">
+       Bagaimana meningkatkan tinggi badan pada Anak 0-2 Tahun?
+       <span class="text-[#a0a080] text-[8px] absolute bottom-1 right-2">
+        10:01
+       </span>
+      </div>
+     </div>
+     <!-- Chatbot message 2 -->
+     <div class="flex items-start space-x-3 mb-4 max-w-[70%]">
+      <div class="flex flex-col items-center text-[#a0a080] text-xs font-semibold w-12 shrink-0">
+       <div class="bg-[#a0a080] rounded-full w-10 h-10 mb-1">
+       </div>
+       Chatbot
+      </div>
+      <div class="bg-white border border-[#a0a080] rounded-lg p-3 text-xs leading-tight relative">
+       Untuk mendukung tinggi badan anak pastikan ia mengonsumsi makanan bergizi yang kaya akan Protein, Kalsium, Zat Besi, dan Vitamin D.
+       <span class="text-[#a0a080] text-[8px] absolute bottom-1 right-2">
+        10:02
+       </span>
+      </div>
+     </div>
+     <!-- Checkbox group -->
+     <div class="flex space-x-2 mb-4">
+      <input class="w-4 h-4 border border-[#a0a080] rounded-sm" type="checkbox"/>
+      <input class="w-4 h-4 border border-[#a0a080] rounded-sm" type="checkbox"/>
+      <input class="w-4 h-4 border border-[#a0a080] rounded-sm" type="checkbox"/>
+     </div>
+     <!-- Input and button -->
+     <form class="flex space-x-2">
+      <input class="flex-grow rounded border border-[#a0a080] bg-[#e6e6cc] px-3 py-1 text-xs text-[#2f3e1a] placeholder-[#a0a080] focus:outline-none focus:ring-1 focus:ring-[#2f3e1a]" placeholder="Ketik pertanyaan disini..." type="text"/>
+      <button class="bg-[#2f3e1a] text-[#c6d9a5] rounded px-4 py-1 text-xs font-semibold hover:bg-[#3f4e2a] transition" type="submit">
+       Kirim
+      </button>
+     </form>
+    </section>
+   </div>
+  </main>
+ </body>
+</html>

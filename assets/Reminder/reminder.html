@@ -1,0 +1,421 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jadwal Reminder Kehidupan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#F3F3E7] text-[#2F4A1E] min-h-screen flex flex-col">
+  <header
+    class="flex items-center justify-between max-w-7xl mx-auto px-6 py-4 select-none"
+  >
+    <div class="flex items-center space-x-2">
+      <img
+        src="https://storage.googleapis.com/a1aa/image/dfd45769-b97b-44ad-a22a-8d78300583e8.jpg"
+        alt="Logo placeholder with text Logo on light background"
+        class="w-10 h-10"
+        width="40"
+        height="40"
+      />
+    </div>
+    <nav
+      class="hidden md:flex space-x-8 text-xs sm:text-sm font-semibold text-[#2F4A1E]"
+    >
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Pemerintahan</a>
+      <a
+        href="#"
+        class="bg-[#2F4A1E] text-[#F3F3E7] rounded-full px-5 py-1 hover:bg-[#244016]"
+        >Jadwal</a
+      >
+      <a href="#" class="hover:underline">Siswa/i</a>
+      <a href="#" class="hover:underline">Konsultasi</a>
+      <a href="#" class="hover:underline">Tentang</a>
+    </nav>
+    <div class="flex items-center space-x-3">
+      <button
+        class="border border-[#2F4A1E] rounded px-3 py-1 text-xs font-semibold text-[#2F4A1E] hover:bg-[#E6E9D9]"
+      >
+        Log in
+      </button>
+      <button
+        class="bg-[#2F4A1E] text-[#F3F3E7] rounded px-5 py-1 text-xs font-semibold hover:bg-[#244016]"
+      >
+        Sign up
+      </button>
+      <img
+        src="https://storage.googleapis.com/a1aa/image/812156e8-45a2-48b2-0eba-81c95512f5ba.jpg"
+        alt="Indonesian flag placeholder 24x24 with text ID"
+        class="w-6 h-6 rounded"
+        width="24"
+        height="24"
+      />
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <section class="text-center mb-8">
+      <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight mb-1">
+        Jadwal Reminder Kehidupan
+      </h1>
+      <p class="text-sm sm:text-base text-[#4A5B2A] font-medium">
+        Buat Jadwal kamu disini untuk keteraturan hidupmu!
+      </p>
+    </section>
+
+    <section
+      class="relative bg-white border border-[#A9B9A0] rounded-lg p-6 sm:p-8 mb-10"
+    >
+      <!-- Year tab -->
+      <div
+        class="absolute -left-6 top-6 bg-[#F3F3E7] border border-[#A9B9A0] rounded-tl-md rounded-bl-md px-3 py-1 text-xs font-semibold text-[#4A5B2A] select-none"
+      >
+        2025
+      </div>
+      <!-- Month button -->
+      <button
+        type="button"
+        class="absolute top-6 left-1/2 -translate-x-1/2 bg-[#4A5B2A] text-[#F3F3E7] rounded-md px-5 py-1 text-xs font-semibold"
+      >
+        April
+      </button>
+      <!-- Left arrow -->
+      <button
+        type="button"
+        aria-label="Previous month"
+        class="absolute top-1/2 -left-4 -translate-y-1/2 text-[#4A5B2A] hover:text-[#2F4A1E]"
+      >
+        <i class="fas fa-chevron-left fa-lg"></i>
+      </button>
+      <!-- Right arrow -->
+      <button
+        type="button"
+        aria-label="Next month"
+        class="absolute top-1/2 -right-4 -translate-y-1/2 text-[#4A5B2A] hover:text-[#2F4A1E]"
+      >
+        <i class="fas fa-chevron-right fa-lg"></i>
+      </button>
+
+      <!-- Calendar grid -->
+      <table
+        class="w-full border-collapse text-center text-xs sm:text-sm text-[#4A5B2A] font-semibold select-none"
+      >
+        <thead>
+          <tr>
+            <th class="pb-2">Mo</th>
+            <th class="pb-2">Tu</th>
+            <th class="pb-2">We</th>
+            <th class="pb-2">Th</th>
+            <th class="pb-2">Fr</th>
+            <th class="pb-2 text-[#7B8B6A]">Sa</th>
+            <th class="pb-2">Su</th>
+          </tr>
+        </thead>
+        <tbody class="text-[#7B8B6A] font-normal">
+          <tr>
+            <td>31</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td class="bg-[#4A5B2A] text-[#F3F3E7] rounded-md font-semibold">
+              27
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="border border-[#A9B9A0] rounded-md text-[#A9B9A0] font-semibold"
+            >
+              28
+            </td>
+            <td>29</td>
+            <td
+              class="border border-[#D9A9A9] rounded-md text-[#D9A9A9] font-semibold"
+            >
+              30
+            </td>
+            <td
+              class="border border-[#A9B9A0] rounded-md text-[#4A5B2A] font-semibold"
+            >
+              1
+            </td>
+            <td>2</td>
+            <td
+              class="border border-[#A9B9A0] rounded-md text-[#4A5B2A] font-semibold"
+            >
+              3
+            </td>
+            <td
+              class="border border-[#A9B9A0] rounded-md text-[#4A5B2A] font-semibold"
+            >
+              4
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td
+              class="border border-[#A9B9A0] rounded-md text-[#4A5B2A] font-semibold"
+            >
+              10
+            </td>
+            <td>11</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Legend -->
+      <div
+        class="flex items-center justify-center space-x-6 mt-4 text-[10px] sm:text-xs text-[#4A5B2A] font-semibold select-none"
+      >
+        <div class="flex items-center space-x-1">
+          <span class="w-3 h-3 rounded-full bg-[#4A5B2A] inline-block"></span>
+          <span>27 April - hari tinggal</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="w-3 h-3 rounded-full bg-[#D94A4A] inline-block"></span>
+          <span>30 april - sosi sakit</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-6 mb-10 max-w-4xl mx-auto">
+      <!-- Today card -->
+      <article
+        aria-label="Hari ini - Minggu 27 April"
+        class="bg-[#4A5B2A] text-[#F3F3E7] rounded-lg p-5 sm:p-6 shadow-md relative"
+      >
+        <header
+          class="flex items-center space-x-2 font-semibold text-sm sm:text-base mb-3"
+        >
+          <i class="far fa-clock"></i>
+          <h2>Hari ini - Minggu 27 April</h2>
+          <button
+            type="button"
+            aria-label="More options"
+            class="ml-auto text-[#F3F3E7] hover:text-[#D9E0C3]"
+          >
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </header>
+        <ul class="space-y-2 text-xs sm:text-sm font-normal">
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-pills text-xs"></i>
+            <span>Ambil Obat Kolestrol + Minum Amoksisilin 3x/hari</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-hospital"></i>
+            <span>Cek Kesehatan di RS Kalibabang</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-carrot"></i>
+            <span>Makan Sayur-sayuran Pagi/Malam</span>
+          </li>
+        </ul>
+        <img
+          src="https://storage.googleapis.com/a1aa/image/d67f4897-b15b-4c8b-a2cf-0c3373ca987f.jpg"
+          alt="Small logo placeholder with text Logo small on dark green background"
+          class="absolute bottom-3 right-3 w-[100px] h-[30px] select-none pointer-events-none"
+          width="100"
+          height="30"
+          draggable="false"
+        />
+      </article>
+
+      <!-- Tomorrow card -->
+      <article
+        aria-label="Besok - Senin 28 April"
+        class="bg-white rounded-lg p-5 sm:p-6 shadow-md relative"
+      >
+        <header
+          class="flex items-center space-x-2 font-semibold text-sm sm:text-base mb-3 text-[#4A5B2A]"
+        >
+          <i class="far fa-clock text-[#D9A94A]"></i>
+          <h2>Besok - Senin 28 April</h2>
+          <button
+            type="button"
+            aria-label="More options"
+            class="ml-auto text-[#4A5B2A] hover:text-[#2F4A1E]"
+          >
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </header>
+        <ul class="space-y-2 text-xs sm:text-sm font-normal text-[#4A5B2A]">
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-pills text-xs text-[#D94A4A]"></i>
+            <span>Ambil Obat Kolestrol + Minum Amoksisilin 3x/hari</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-hospital text-[#4A94D9]"></i>
+            <span>Cek Kesehatan di RS Kalibabang</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-carrot text-[#4AD94A]"></i>
+            <span>Makan Sayur-sayuran Pagi/Malam</span>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section
+      class="bg-[#F3F3E7] rounded-lg p-5 sm:p-6 shadow-md max-w-3xl mx-auto mb-16"
+    >
+      <header
+        class="flex items-center space-x-2 font-semibold text-sm sm:text-base mb-3 text-[#2F4A1E]"
+      >
+        <i class="far fa-calendar-alt"></i>
+        <h2>Jadwal yang akan datang</h2>
+        <button
+          type="button"
+          aria-label="More options"
+          class="ml-auto text-[#2F4A1E] hover:text-[#1F3310]"
+        >
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </header>
+      <ul class="text-xs sm:text-sm font-normal text-[#2F4A1E] space-y-1">
+        <li>1 Mei - Operasi Plastik</li>
+        <li>3 Mei - Imunisasi</li>
+        <li>10 Mei - Diet 5Kg</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-[#2F4A1E] text-[#D9E0C3] py-10 px-6 sm:px-12 select-none">
+    <div
+      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 text-xs sm:text-sm"
+    >
+      <div class="space-y-3">
+        <img
+          src="https://storage.googleapis.com/a1aa/image/cbcb6727-44e3-4eaf-f2ba-740884207408.jpg"
+          alt="Footer logo placeholder with text Logo on dark green background"
+          class="w-10 h-10"
+          width="40"
+          height="40"
+        />
+        <p class="font-semibold">Bekasi</p>
+        <p class="font-semibold">harapan indah</p>
+        <p class="font-normal">Phone: 08123456789</p>
+        <p class="font-normal">Email: www@gmail.com</p>
+        <div class="flex space-x-3 mt-2">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="text-[#D9E0C3] hover:text-white text-lg"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="text-[#D9E0C3] hover:text-white text-lg"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="text-[#D9E0C3] hover:text-white text-lg"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <h3 class="font-semibold mb-2">Useful Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Pemerintahan</a></li>
+          <li><a href="#" class="hover:underline">Jadwal</a></li>
+          <li><a href="#" class="hover:underline">Siswa/i</a></li>
+          <li><a href="#" class="hover:underline">Konsultasi</a></li>
+          <li><a href="#" class="hover:underline">Tentang</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h3 class="font-semibold mb-2">Social Media</h3>
+        <ul class="space-y-1">
+          <li>
+            <a href="#" class="flex items-center space-x-2 hover:underline">
+              <i class="fab fa-facebook-f"></i>
+              <span>@bekasip</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center space-x-2 hover:underline">
+              <i class="fab fa-twitter"></i>
+              <span>@bekasip</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center space-x-2 hover:underline">
+              <i class="fab fa-instagram"></i>
+              <span>@bekasip</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h3 class="font-semibold mb-2">Tips Kesehatan Anak</h3>
+        <p class="text-xs leading-tight">
+          Dapatkan tips rutin seputar gizi, tumbuh kembang, dan pencegahan
+          stunting untuk orang tua dari berbagai usia anak.
+        </p>
+        <button
+          type="button"
+          class="bg-[#4A5B2A] text-[#F3F3E7] rounded px-4 py-1 text-xs font-semibold hover:bg-[#244016]"
+        >
+          Langganan Tips!
+        </button>
+      </div>
+    </div>
+    <div class="text-center text-[10px] mt-8 text-[#D9E0C3] select-none">
+      ©2025 Copyright - Show Up
+    </div>
+  </footer>
+</body>
+</html>
