@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Grow Up</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-web.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo-web.png" alt="">
+        <h1 class="sitename">Grow Up</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <i class="mobile-nav-toggle bi bi-list" onclick="toggleMobileMenu()"></i>
+        <ul id="nav-links">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="pemantauan.html">Pemantauan</a></li>
+          <li><a href="#">Jadwal</a></li>
+          <li><a href="#">Edukasi</a></li>
+          <li><a href="konsultasi.html">Konsultasi</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      
+      <div class="auth-buttons">
+        <a class="cta-btn login-btn" href="index.html#about">Login</a>
+        <a class="cta-btn signup-btn" href="index.html#about">Sign Up</a>
+      </div>
+      
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  
+  <main class="max-w-3xl mx-auto px-6 mt-32">
+    <!-- Form Section -->
+    <section class="relative bg-[#f0f1d9] rounded-[3rem] py-10 px-8 flex flex-col items-center" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)">
+     <img alt="Illustration of a child with short brown hair wearing a green shirt" class="mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/5894fd71-1665-47bf-3bf5-da0899419508.jpg" width="80"/>
+     <h1 class="text-xl font-semibold text-[#3a5a22] text-center mb-8 leading-tight">
+      Pemantauan
+      <br/>
+      Pertumbuhan Anak
+     </h1>
+     <form autocomplete="off" class="bg-[#2f4a1e] rounded-2xl p-6 w-full max-w-md space-y-4">
+      <div class="flex items-center justify-between text-[#cbd5b2] text-sm font-semibold">
+       <label class="w-36" for="nama">
+        Nama
+       </label>
+       <input class="flex-1 rounded-lg py-2 px-4 text-[#2f4a1e] font-semibold" id="nama" placeholder="isi nama..." type="text"/>
+      </div>
+      <div class="flex items-center justify-between text-[#cbd5b2] text-sm font-semibold">
+       <label class="w-36" for="tgl-lahir">
+        Tanggal Lahir
+       </label>
+       <input class="flex-1 rounded-lg py-2 px-4 text-[#2f4a1e] font-semibold" id="tgl-lahir" placeholder="DD/MM/YYYY" type="text"/>
+      </div>
+      <div class="flex items-center justify-between text-[#cbd5b2] text-sm font-semibold">
+       <label class="w-36" for="berat">
+        Berat Badan (kg)
+       </label>
+       <input class="flex-1 rounded-lg py-2 px-4 text-[#2f4a1e] font-semibold" id="berat" placeholder="30 kg" type="text"/>
+      </div>
+      <div class="flex items-center justify-between text-[#cbd5b2] text-sm font-semibold">
+       <label class="w-36" for="tinggi">
+        Tinggi Badan (cm)
+       </label>
+       <input class="flex-1 rounded-lg py-2 px-4 text-[#2f4a1e] font-semibold" id="tinggi" placeholder="82 cm" type="text"/>
+      </div>
+      <div class="flex justify-center space-x-4 mt-2 text-xs text-[#3a5a22] font-semibold opacity-50">
+       <button class="bg-[#2f4a1e] rounded px-4 py-1 cursor-not-allowed" disabled="" type="button">
+        Load List
+       </button>
+       <button class="bg-[#2f4a1e] rounded px-4 py-1 cursor-not-allowed" disabled="" type="button">
+        Pemantauan
+       </button>
+      </div>
+      <button class="w-full bg-[#5a7f3a] text-[#f0f1d9] font-semibold rounded-lg py-3 mt-4 hover:bg-[#4e6e31] transition" type="submit">
+       Kirim
+      </button>
+     </form>
+     <img alt="Decorative green blob shape on the left side behind the form" class="absolute left-0 top-1/2 -translate-y-1/2 -z-10 w-28 h-28 rounded-full opacity-70" height="120" src="https://storage.googleapis.com/a1aa/image/51eb11bb-0b77-4df2-05cb-d07f380bd940.jpg" width="120"/>
+     <img alt="Decorative green blob shape on the right side behind the form" class="absolute right-0 top-1/3 -translate-y-1/2 -z-10 w-36 h-36 rounded-full opacity-70" height="140" src="https://storage.googleapis.com/a1aa/image/88c01a17-3eb7-4f6f-7849-f5c392e6088d.jpg" width="140"/>
+    </section>
+    <!-- Statistik Section -->
+    <section class="mt-4 px-2">
+     <h2 class="text-[#3a5a22] font-semibold text-lg text-center mb-1">
+      Hasil Statitistik Pertumbuhan
+     </h2>
+     <p class="text-center text-xs text-[#3a5a22] mb-6">
+      *WHO Standar Tinggi Badan Anak di Umur 20 Bulan
+     </p>
+     <div class="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg">
+      <table class="w-full text-xs text-center border border-[#2f4a1e] rounded-t-lg">
+       <thead class="bg-[#2f4a1e] text-[#f0f1d9]">
+        <tr>
+         <th class="py-2 border-r border-[#f0f1d9]">
+          Umur (Bulan)
+         </th>
+         <th class="py-2 border-r border-[#f0f1d9]">
+          TB -2 SD (cm)
+         </th>
+         <th class="py-2 border-r border-[#f0f1d9]">
+          TB -3 SD (cm)
+         </th>
+         <th class="py-2">
+          TB 0 SD (cm)
+         </th>
+        </tr>
+       </thead>
+       <tbody class="bg-[#f0f1d9] text-[#2f4a1e] font-semibold">
+        <tr>
+         <td class="py-2 border-t border-[#2f4a1e] border-r border-[#2f4a1e]">
+          20 Bulan
+         </td>
+         <td class="py-2 border-t border-[#2f4a1e] border-r border-[#2f4a1e] text-[#d94a4a]">
+          76.7 cm
+         </td>
+         <td class="py-2 border-t border-[#2f4a1e] border-r border-[#2f4a1e] text-[#d94a4a]">
+          82.3 cm
+         </td>
+         <td class="py-2 border-t border-[#2f4a1e] text-[#3a7a3a]">
+          84.1 cm
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div class="flex justify-center space-x-6 py-2 text-xs text-[#3a5a22] font-semibold">
+       <div class="flex items-center space-x-1">
+        <span class="w-3 h-3 rounded-full bg-[#3a7a3a] inline-block">
+        </span>
+        <span>
+         Normal (Stunting)
+        </span>
+       </div>
+       <div class="flex items-center space-x-1">
+        <span class="w-3 h-3 rounded-full bg-[#d94a4a] inline-block">
+        </span>
+        <span>
+         Risiko Stunting (Stunting)
+        </span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- Chart Section -->
+    <section class="mt-10 bg-[#2f4a1e] rounded-3xl p-6 max-w-4xl mx-auto text-[#a6d785] relative mb-16">
+     <div class="flex flex-col md:flex-row md:space-x-8">
+      <div class="flex-1">
+       <svg aria-label="Line chart showing growth data from Jan to Dec" class="w-full h-48 md:h-56" viewbox="0 0 400 200">
+        <defs>
+         <lineargradient id="grad" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#5a7f3a" stop-opacity="0.8">
+          </stop>
+          <stop offset="100%" stop-color="#2f4a1e" stop-opacity="0">
+          </stop>
+         </lineargradient>
+        </defs>
+        <path d="M40 150 L70 130 L100 120 L130 110 L160 100 L190 90 L220 80 L250 70 L280 60 L310 50 L340 40 L370 30" fill="url(#grad)" fill-opacity="0.6" stroke="#a6d785" stroke-width="2">
+        </path>
+        <circle cx="70" cy="130" fill="#a6d785" r="5">
+        </circle>
+        <circle cx="100" cy="120" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="130" cy="110" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="160" cy="100" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="190" cy="90" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="220" cy="80" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="250" cy="70" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="280" cy="60" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="310" cy="50" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="340" cy="40" fill="#a6d785" r="3">
+        </circle>
+        <circle cx="370" cy="30" fill="#a6d785" r="3">
+        </circle>
+        <text fill="#a6d785" font-size="10" font-style="italic" x="40" y="180">
+         Jan
+        </text>
+        <text fill="#a6d785" font-size="10" font-style="italic" x="370" y="180">
+         Dec
+        </text>
+        <text fill="#a6d785" font-size="10" font-weight="600" x="70" y="120">
+         62cm
+        </text>
+       </svg>
+      </div>
+      <div class="flex-1 mt-6 md:mt-0 text-xs leading-relaxed">
+       <p class="font-semibold mb-2 italic text-[#c1d99a]">
+        Biodata diri:
+       </p>
+       <ul class="list-disc list-inside space-y-1">
+        <li>
+         Muhammad Rayyan Ardiano
+        </li>
+        <li>
+         Jenis Kelamin
+         <a class="text-[#a6d785] font-semibold hover:underline" href="#">
+          Laki-Laki
+         </a>
+        </li>
+        <li>
+         Usia
+         <span class="text-[#a6d785] font-semibold">
+          20 Bulan
+         </span>
+        </li>
+        <li>
+         Berat Badan
+         <span class="text-[#a6d785] font-semibold">
+          30 kg
+         </span>
+        </li>
+        <li>
+         Tinggi Badan
+         <span class="text-[#a6d785] font-semibold">
+          82 cm
+         </span>
+        </li>
+       </ul>
+       <p class="mt-4 text-[10px] font-semibold text-[#a6d785]">
+        Karena
+        <span class="font-bold text-[#c1d99a]">
+         Tinggi Badan 60cm
+        </span>
+        dan
+        <span class="font-bold text-[#c1d99a]">
+         berat 2 - 3 SD
+        </span>
+       </p>
+       <button class="mt-4 bg-[#3fff1f] text-[#0a1a00] font-semibold rounded-full px-6 py-2 hover:bg-[#2ecc11] transition">
+        Aman dari STUNTING
+       </button>
+       <p class="mt-2 text-[10px] text-[#a6d785] text-right cursor-pointer hover:underline">
+        Lihat saran &gt;
+       </p>
+      </div>
+     </div>
+    </section>
+   </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo-footer.png" alt="">
+            <span class="sitename">Grow Up</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Bekasi</p>
+            <p>Harapan Indah</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>08123439595</span></p>
+            <p><strong>Email:</strong> <span>growup@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-tiktok"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Pemantauan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Jadwal</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Edukasi</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Konsultasi</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Social Media</h4>
+          <ul>
+            <li class="d-flex gap-2 mb-2">
+              <img src="assets/img/ig.png" alt="Instagram" width="30" height="30">
+              <a href="#" class="text-white text-decoration-none link-opacity-75-hover">@growup</a>
+            </li>
+            <li class="d-fle gap-2 mb-2">
+              <img src="assets/img/tiktok.png" alt="TikTok" width="30" height="30">
+              <a href="#" class="text-white text-decoration-none link-opacity-75-hover">@growup</a>
+            </li>
+            <li class="d-flex gap-2">
+              <img src="assets/img/yt.png" alt="YouTube" width="30" height="30">
+              <a href="#" class="text-white text-decoration-none link-opacity-75-hover">@growup</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Tips Kesehatan Anak</h4>
+          <p>Dapatkan tips rutin seputar gizi, tumbuh kembang, dan pencegahan stunting untuk anak usia dini langsung ke email Anda!</p>
+          <button><a href="#">Langganan Tips</a></button>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+    <div class="container copyright text-center mt-1">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Grow Up</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
